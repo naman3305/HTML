@@ -1,0 +1,51 @@
+<html><head>
+<script>
+function abc()
+{
+
+	var t=document.getElementById("a").value;
+	var o=document.getElementById("b").value;
+	var m=document.getElementById("e").value;
+	if(m<40)
+	{
+	document.write('<table border="1"><tr><td>Name</td><td>'+t+'</td></tr><tr><td>Roll No.</td><td>'+o+'</td></tr><tr><td>Grade</td><td> F </td></tr></table>');
+	}
+	if(m>=40&&m<60)
+	{
+	document.write('<table border="1"><tr><td>Name</td><td>'+t+'</td></tr><tr><td>Roll No.</td><td>'+o+'</td></tr><tr><td>Grade</td><td> C </td></tr></table>');
+	}
+	if(m>=60&&m<80)
+	{
+	document.write('<table border="1"><tr><td>Name</td><td>'+t+'</td></tr><tr><td>Roll No.</td><td>'+o+'</td></tr><tr><td>Grade</td><td> B </td></tr></table>');
+	}
+	if(m>=80&&m<90)
+	{
+	document.write('<table border="1"><tr><td>Name</td><td>'+t+'</td></tr><tr><td>Roll No.</td><td>'+o+'</td></tr><tr><td>Grade</td><td> A </td></tr></table>');
+	}
+	if(m>=90)
+	{
+	document.write('<table border="1"><tr><td>Name</td><td>'+t+'</td></tr><tr><td>Roll No.</td><td>'+o+'</td></tr><tr><td>Grade</td><td> O </td></tr></table>');
+	}
+}
+
+
+</script>
+
+</head>
+<body>
+Name : <input type="text" id="a" >
+<br>
+<br>
+Roll No. : <input type="text" id="b" >
+<br><br>
+
+Marks : <input type="Number" id="e" >
+<br><br>
+
+
+
+<input type="submit" value="Print Record" onclick="abc()">
+<br><br>
+
+
+</body></html>
