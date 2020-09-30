@@ -1,0 +1,26 @@
+<!Doctype html>
+<html>
+    <head>
+        <script src="jq.js"></script>
+        <script>
+           $(document).ready(function(){
+               $("#a").keydown(function(){
+               var r=$("#a").val();
+               var t=r.length;
+               var p=eval(20-t);
+               if(p>=0)
+               {
+               document.getElementById("b").innerHTML=p +" Characters required";
+               }
+               else{
+                   alert("No more Characters are required");
+               }
+               });
+           });
+        </script>
+    </head>
+    <body>
+        <textarea rows="10" cols="20" id="a"></textarea><br>
+        <p id="b">20 Characters required</p>
+    </body>
+</html>
