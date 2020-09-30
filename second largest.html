@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="jq.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("button").click(function(){
+                    var i,a=[],p="";
+                    for(i=0;i<$("#txt").val();i++)
+                    {
+                        a[i]=prompt("Enter Elements here :");
+                        p=p+a[i]+" ";
+                    }
+                    a.sort(function(b,c){return b-c});
+                    var max=a[a.length-1];
+                    for(i=(a.length-2);i>=0;i--)
+                    {
+                        if(a[i]!=max)
+                        {
+                            break;
+                        }
+                    }
+                    alert("Entered Elements are:"+p+"second largest digit :"+a[i]);
+                });
+            });
+        </script>
+    </head>
+    <body>
+        Enter size of array <br>
+        <input id="txt"><br>
+        <button>Find Second largest digit</button>
+    </body>
+</html>
