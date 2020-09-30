@@ -1,0 +1,23 @@
+<!Doctype html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+$('button').click(function(){
+var n=document.getElementById("name").value;
+document.getElementById("pr").innerHTML="Hello, "+n;
+});
+$('#pr').hover(function(){
+document.getElementById("pri").innerHTML="<ul><li>I like Coffee</li><li>I like Tea</li></ul>"
+});
+});
+</script>
+</head>
+<body>
+Name <input type="text" id="name">
+<button>Print</button><br>
+<p id="pr"></p>
+<p id="pri"></p>
+</body>
+</html>
