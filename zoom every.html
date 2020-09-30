@@ -1,0 +1,17 @@
+<!Doctype html>
+<html>
+    <head>
+        <script src="jq.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('button').click(function(){
+                    $('div').animate({height:'+=50px',width:'+=50px',opacity:'-=0.1'});
+                });
+            });
+            </script>
+    </head>
+    <body>
+        <div style="background-color: blue;height:100px;width:100px" id="a"></div><br>
+        <button>Zoom</button>
+    </body>
+</html>
