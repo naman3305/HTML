@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="jq.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('.blink').mouseover(function(){
+                    setInterval(function(){
+                        $('.blink').fadeToggle();
+                    },100);
+                });
+            });
+        </script>
+
+        <style>
+            body{
+                background-color: rgb(51,51,51);
+                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            }
+            .main{
+                color:rgb(212,212,212);font-size:150px;
+                font-weight:bold;
+                text-align:center;
+                position:relative;
+                top:250px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="main">
+            <span>H</span>
+            <span class="blink">E</span>
+            <span>L</span>
+            <span>L</span>
+            <span>O</span>
+        </div>
+    </body>
+</html>
