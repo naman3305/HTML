@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+                <script src="jq.js"></script>
+        <script>
+           
+                var c=1;
+                $(document).ready(function(){
+               $('.a').click(function(){
+                   if(c%2!=0)
+                   {
+                $('.a').css({"font-size":"20px","background-color":"green","border-width":"10px","border-color":"black","border-style":"solid"});
+                   }
+                else
+                {
+                $('.a').css({"font-size":"10px","background-color":"yellow","border-width":"5px","border-color":"white","border-style":"dashed","color":"white"});
+                }
+                c++;
+                });
+            });
+        </script>
+
+    </head>
+    <body>
+        <h1 class="a">Happy Lohri To All</h1>
+    </body>
+</html>
