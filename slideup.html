@@ -1,0 +1,22 @@
+<!Doctype html>
+<html>
+    <head>
+        <script src="jq.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("p").mouseenter(function(){
+                    document.getElementById("a").innerHTML="Bye";
+                    $('div').slideDown('slow');
+                });
+                $("p").click(function(){
+                    document.getElementById("a").innerHTML="Hello";
+                    $('div').slideUp('slow');
+            });
+            });
+            </script>
+    </head>
+    <body>
+        <p id="a">hello</p>
+        <div style="height:100px;width:100px;display:none;background-color: brown;" ></div><br>
+    </body>
+</html>
