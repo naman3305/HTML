@@ -1,0 +1,25 @@
+<!Doctype html>
+<html>
+<head>
+<script src="jq.js"></script>
+<script>
+$(document).ready(function(){
+$('#down').click(function(){
+document.getElementById("pr").innerHTML="HELLO";
+$('#d').slideDown();
+$('#pr').fadeIn('slow');
+});
+$('#up').click(function(){
+document.getElementById("pr").innerHTML="BYE";
+$('#d').slideUp();
+$('#pr').fadeOut('slow');
+});
+});
+</script>
+</head>
+<body>
+<div style="height:100px; width:100px ; background-color:red" id="d"><p id="pr"></p></div>
+<button id="up">slide up</button>
+<button id="down">slide down</button>
+</body>
+</html>
