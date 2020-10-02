@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <title>Bootstrap Example</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        
+           
+           
+        <script>
+            var val=0;
+        $('document').ready(function(){
+          $('#a').click(function(){
+             $('#aa').animate({width:'+=100'});
+          });
+
+          $('#b').click(function(){
+             $('#bb').animate({width:'+=100'});
+          });
+          $('#c').click(function(){
+             $('#cc').animate({width:'+=100'});
+          });
+          $('#d').click(function(){
+             $('#dd').animate({width:'+=100'});
+          });
+          $('#e').click(function(){
+             $('#ee').animate({width:'+=100'});
+          });
+        });
+        
+        </script>
+       
+    </head>
+    <body>
+        <div class="container">
+            <h1> BIGG BOSS VOTING ZONE </h1><br>
+            <input type="checkbox" value="Sana" id="a">Sana<br>
+            <input type="checkbox" value="Shukla" id="b">Shukla<br>
+            <input type="checkbox" value="rashmi" id="c">Rashmi<br>
+            <input type="checkbox" value="Asim" id="d">Asim<br>
+            <input type="checkbox" value="vishal" id="e">vishal<br>
+            <input type="button" value="vote" id="aaa">
+            <h6>Sana</h6>         
+                <div class="progress" id="q">
+                
+                <div class="progress-bar progress-bar-striped active"  style="width:0%;" id="aa"></div>
+                </div>
+                <h6>Shukla</h6>
+                <div class="progress">
+                    
+                    <div class="progress-bar progress-bar-striped active"   style="width:0%;"id="bb"></div>
+                    </div>
+                    <h6>Rashmi</h6>
+                <div class="progress">
+                       
+                        <div class="progress-bar progress-bar-striped active" style="width:0%;" id="cc"></div>
+                        </div>
+                        <h6>Asim</h6>
+
+                <div class="progress">
+                       
+                        <div class="progress-bar progress-bar-striped active" style="width:0%;" id="dd"></div>
+               </div> 
+               
+               <h6>vishal</h6>
+               <div class="progress">
+               
+                <div class="progress-bar progress-bar-striped active" style="width:0%;" id="ee"></div>
+                </div>
+
+        </div>
+        <p id="para"></p>
+    </body>
+</html>
