@@ -1,0 +1,64 @@
+<!Doctype html>
+<html>
+
+<head>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+<script>
+$(document).ready(function(){
+var c=0,x=0;
+var g="";
+$("#a").click(function(){
+if(c%2==0)
+{
+$("#a").html("<span class='badge badge-pill badge-success'>online</span>");
+}
+else
+{
+$("#a").html("<span class='badge badge-pill badge-danger'>offline</span>");
+}
+c++;
+});
+$("#u1").click(function(){
+g=$("#u1").val();
+});
+
+$("#u2").click(function(){
+g=$("#u2").val();
+});
+
+$("#u3").click(function(){
+g=$("#u2").val();
+});
+
+$("#bt").click(function(){
+var s=$("#va").val();
+x++;
+$("#pr").append("<li class='list-group-item'>"+s+" "+g+"</li>");
+$("#k").html("<span class='badge badge-light'>"+x+"</span>")
+});
+});
+</script>
+</head>
+
+<body>
+<div class="container">
+Chat with me:<span id="a"> <span class="badge badge-pill badge-danger" >offline</span></span>
+<button class="btn btn-success">Message<span class="badge badge-light" id="k">0</span></button>
+<div class="row">
+<div class="btn-group-vertical">
+<button type="button" class="btn btn-primary" value="Aks" id="u1">Aks</button>
+<button type="button" class="btn btn-primary" value="Ak" id="u2">Ak</button>
+<button type="button" class="btn btn-primary" value="s" id="u3">s</button>
+</div>
+<div class="col-sm-3"><input type="text" id="va">
+<input type="button" value="Submit" class="btn btn-light" id="bt">
+</div>
+<div clas="col-sm-6"><ul id="pr" class="list-group"></ul></div>
+</div>
+
+</body>
+</html>
