@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <style>
+    #a{
+    height:80px;
+    margin-top: 50px;   
+    }
+  </style>
+  <script>
+    var g=0;
+    var d=0
+    $("document").ready(function(){
+        $("#b1").click(function(){
+          g++;
+          document.getElementById("para").innerHTML=g;
+        });
+        $("#b2").click(function(){
+          $("#text").show();
+        }); 
+        $("#btn").click(function(){
+          $("#text").hide(function(){
+            var t=$('#text2').val();
+            var q=$('#text1').val();
+            document.getElementById("qt").innerHTML=t;
+            document.getElementById("nam").innerHTML=q;
+          });
+          $("#cpy").show();
+        }); 
+        $("#b3").click(function(){
+          d++;
+          document.getElementById("para2").innerHTML=d;
+        });
+
+    });
+  </script>
+</head>
+<body>
+ 
+<div class="container">
+  <div class="card-group bg-primary" style="width:80%;height:400px;">
+    <img class="card-img-top rounded-circle" src="C:\Users\hp\Desktop\who.jpg" alt="Card image" style="width:400px;height:300px;">
+    <div class="card-body">
+      <h4 class="card-title"><span style="font-weight: 800;margin-left:150px">NAMAN</span></h4>
+      <div class="card-group bg-dark text-white" id="a">
+        <div class="card-body">Its a Nice Choice!!!!</div>
+      </div>
+      
+      <div class="card-body">
+        <button type="button" class="btn btn-danger" id="b1"><b id="para"></b><img src="C:\Users\hp\Desktop\heart.jpg" height="20px" width="20px">  Like Me</button>
+<button type="button" class="btn btn-warning" id="b2" >  Reply</button>
+      </div>
+    </div>
+    
+  </div>
+  <br>
+  </div>
+   <div class="container" id="text" style="display: none;">
+    <div class="card bg-primary" style="width:80%;">
+       <div class="class-body" >
+       <center> Name:<br> <input type="text" style="width:70%" id="text1"><br>
+        Comments:<br> <input type="text" style="width:70%" id="text2"><br></center><br>
+       </div>
+       <button id="btn">ENTER</button>
+    </div>
+  </div>
+  <div class="container">
+    <div class="card-group bg-primary" style="width:80%;height:400px;display: none;" id="cpy">
+      <img class="card-img-top rounded-circle" src="C:\Users\hp\Desktop\who.jpg" alt="Card image" style="width:400px;height:300px;">
+      <div class="card-body">
+        <h4 class="card-title"><span style="font-weight: 800;margin-left:150px"><b id="nam"></b></span></h4>
+        <div class="card bg-dark text-white" id="a">
+          <div class="card-body" id="cmt"><b id="qt"></b></div>
+        </div>
+        <div class="card-body">
+          <button type="button" class="btn btn-danger" id="b3"><b id="para2"></b><img src="C:\Users\hp\Desktop\heart.jpg" height="20px" width="20px">   Like Me</button>
+  <button type="button" class="btn btn-warning" id="b2" >  Reply</button>
+        </div>
+      </div>
+      
+    </div>
+    <br>
+    </div>
+</body>
+</html>
