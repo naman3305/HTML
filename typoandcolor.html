@@ -1,0 +1,45 @@
+<!Doctype html>
+<html>
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+<script scr="jq.js">
+$(document).ready(function(){
+$('#bt').click(function(){
+var a=$('#n').val();
+var b=$('#r').val();
+$('#tab').append("<tr><td>"+a+"</td><td>"+b+"</td></tr>")
+
+});
+
+});
+</script>
+</head>
+
+<body>
+<div class="container">
+
+<h1 class="display-1"><kbd>Add</kbd><span class="text-danger">Element</span></h1>
+
+<div class="form-group">
+<div class="form-inline">
+Name<input type="text" id="n">Roll number<input type="text" id="r">
+
+<button class="btn btn-primary" style="height:33px" id="bt">Add</button>
+</div>
+
+
+</div>
+<table class="table table-bordered table-hover"  id="tab">
+<tr>
+<th>Name</th>
+<th>Roll No.</th>
+</tr>
+
+</table>
+</div>
+</body>
+</html>
