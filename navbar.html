@@ -1,133 +1,29 @@
-<html>
-    <head>
-        <title>Bootstrap Example</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>     
-        <script>
-    $('document').ready(function(){
-       $('#a').click(function(){
-           $("#nav2").slideToggle();
-       });
-       $('#bat').click(function(){
-        
-             $("#nav4,#nav5").hide(function(){
-                $("#nav3").show();
-             });
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+  <nav class="navbar navbar-expand-sm-2 navbar-dark bg-dark">
+      <div class="rounded-circle bg-primary" style="height:25px;width:25px;"> </div>
+      <a href="#" class="navbar-brand mr-lg-5" style="margin-left:10px;">Hello Students</a>
+          <ul class="navbar-nav">
+               <li class="nav-item"><a href="#a" class="nav-link like"><b>Likes</b></a></li>
+               <li class="nav-item"><a href="#" class="nav-link dislike"><b>Dislikes</b></a></li>
+               <li class="nav-item"><a href="#" class="nav-link int"><b>Interest</b></a></li>
+          </ul>
 
-       });
-       $('#coff').click(function(){
-        
-             $("#nav3,#nav5").hide(function(){
-                $("#nav4").show();
-             });
-       });
-       $('#foot').click(function(){
-        
-        $("#nav3,#nav4").hide(function(){
-           $("#nav5").show();
-        });
-  });
-       
-
-    });
-            
-        </script>
-        <style>
-       #nav2{
-           width:150px;
-           display:none;
-       }
-       #nav3,.ab{
-           display: none;
-       }
-       #nav4{
-           display: none;
-       }
-       #nav5{
-           display: none;
-       }
-        </style>
-       
-    </head>
-    <body>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-12">
-
-               
-        <nav class="navbar navbar-expand-sm bg-dark">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a href="#" class="nav-link"> LIKES  </a>
-                </li>
-
-                <li class="nav-item">
-                    <a href="#" class="nav-link"> DISLIKES  </a>
-                </li>
-
-                <li class="nav-item">
-                    <a href="#" class="nav-link" id="a"> INTERESTS  </a>
-                </li>
-            </ul>
-        </nav>
-    </div>
+      <form class="form-inline" style="height:22px;margin-left:250px;">
+          <input type="text" class="form-control mr-sm-2"><button class="btn btn-success">Search</button>
+      </form>
+   </nav>
 </div>
-
-
-          <br><br>
-
-          <div class="row">
-            <div class="col-4">
-
-        <nav class="navbar  bg-dark" id="nav2">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a href="#" class="nav-link" id="coff"> COFFEE  </a>
-                </li>
-
-                <li class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"> CRICKET </a>
-                  <div class="dropdown-menu dropdown-menu-up     bg-light">
-
-                    <a href="#" class="dropdown-item" id="bat"> BATSMAN </a>
-                    <a href="#" class="dropdown-item" id="foot"> WICKETKEEPER </a>
-
-                  </div>
-                </li>
-
-                <li class="nav-item " >
-                    <a href="#" class="nav-link"> FOOTBALL  </a>
-                </li>
-            </ul>
-        </nav>
-        </div>
-        <div class="col-6" >
-            <div class="card bg-primary" id="nav3" style="width:60%;height:400px;">
-                <div class="card-body">
-                 <img class="card-img-top" src="rahul.jpg" height="300px" style="width:300px;height:300px;">
-                </div>
-            </div>
-
-            <div class="card bg-primary" id="nav4" style="width:60%;height:400px;">
-                <div class="card-body">
-                 <img class="card-img-top" src="coffee.jpg" height="300px" style="width:300px;height:300px;">
-                </div>
-            </div>
-
-            <div class="card bg-primary" id="nav5" style="width:60%;height:400px;">
-                <div class="card-body">
-                 <img class="card-img-top" src="dhoni.jpg" height="300px" style="width:300px;height:300px;">
-                </div>
-            </div>
-        </div>
-        </div>
-
-
-    </div>   
-        
-    </body>
+</body>
 </html>
