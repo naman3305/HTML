@@ -1,0 +1,28 @@
+<!doctype.html>
+<html>
+<head>
+<script>
+function abc()
+{
+var a=document.getElementById("b").value;
+var d=document.getElementById("c").value;
+
+var l=a.length;
+var f=a.indexOf(d)
+var e=a.slice(0,f);
+var q=a.slice(f+1,l)
+var t=e.concat(q)
+document.write(t);
+
+}
+
+
+</script>
+</head>
+<body>
+Name: <input type="text" id="b">
+<br><br><br>
+Remove:<input type="text" id="c">
+<input type="submit" value="Swap" onclick="abc()">
+</body>
+</html>
