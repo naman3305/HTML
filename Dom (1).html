@@ -1,0 +1,55 @@
+<html>
+<head>
+<script>
+function rep()
+{
+var a=document.createElement("LI");
+var b=document.createTextNode("Water");
+a.appendChild(b);
+var parent=document.getElementById("par");
+var re=document.getElementById("ab");
+parent.replaceChild(a,re);
+}
+
+function app()
+{
+var a=document.createElement("LI");
+var b=document.createTextNode("Meat");
+a.appendChild(b);
+var parent=document.getElementById("par");
+parent.insertBefore(a,parent.childNodes[0]);
+
+}
+
+function ins()
+{
+var a=document.createElement("LI");
+var b=document.createTextNode("Lemon Tea");
+a.appendChild(b);
+a.setAttribute("id","hi")
+var parent=document.getElementById("par");
+var d=document.getElementById("cd");
+parent.insertBefore(a,d)
+}
+
+function rem()
+{
+
+var e=document.getElementById("hi");
+e.remove()
+}
+
+
+</script>
+
+</head>
+<body>
+<ul id="par">
+<li id="ab">Coffee</li>
+<li id="cd">Tea</li>
+<li id="ef">Milk</li>
+<input type="button" value="Replace" onclick="rep()">
+<input type="button" value="Append" onclick="app()">
+<input type="button" value="Insert Before" onclick="ins()">
+<input type="button" value="Remove" onclick="rem()">
+</body>
