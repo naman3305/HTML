@@ -1,0 +1,43 @@
+<html>
+<head>
+<style>
+	h1{ border:2px dotted red; border-radius:300px 300px;margin-left:650px;margin-right:650px}
+</style>
+</head>
+<body>
+<center>
+	<h1 id="abc"></h1>
+	
+	<input type = "text" id="def"> <input type="button" value="Show" onclick = "wer()" >
+	
+	<h2 id="demo"></h2>
+
+	<script>
+	var c=new Date();
+	var b=c.toString();
+	document.getElementById("abc").innerHTML = b.substr(16,5);
+	function wer()
+	{
+		var p=document.getElementById("def").value;
+		var q=c.getHours();
+		if(q>=8&&q<12)
+		{
+		document.getElementById("demo").innerHTML = "Hello, " + p + " Good Morning!";
+		}
+		else if(q>=12&&q<17)
+		{
+		document.getElementById("demo").innerHTML = "Hello, " + p + " Good Afternoon!";
+		}
+		else if(q>=17&&q<22)
+		{
+		document.getElementById("demo").innerHTML = "Hello, " + p + " Good Evening!";
+		}
+		else if(q>=22&&q<8)
+		{
+		document.getElementById("demo").innerHTML = "Hello, " + p + " Good Night!";
+		}
+	}
+
+	</script>
+</body>
+</html>
